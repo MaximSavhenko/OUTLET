@@ -1,0 +1,4 @@
+function hidewindow(windowBox,windowOver){
+    windowOver.fadeOut(400, function(){ jQuery(this).remove(); });
+    windowBox.fadeOut(400, function(){ jQuery(this).remove(); });
+}

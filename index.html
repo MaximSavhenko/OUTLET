@@ -1,0 +1,833 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0030)https://www.dirndl-outlet.net/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./js/bcebddc1b5"></script>
+    <script src="./js/nr-1184.min.js.Без названия"></script>
+    <script async="" src="./js/main.2424edb5.js.Без названия"></script>
+    <script src="./js/825001008270925" async=""></script>
+    <script async="" src="./js/fbevents.js.Без названия"></script>
+    <script type="text/javascript" async=""
+        src="./js/analytics.js.Без названия"></script>
+    <script type="text/javascript" async="" src="./js/core.js.Без названия"></script>
+    <script type="text/javascript" async="" src="./js/bat.js.Без названия"></script>
+    <script async="" src="./js/gtm.js.Без названия"></script>
+    <script async="" src="./js/analytics.js.Без названия"></script>
+    <script
+        type="text/javascript">(window.NREUM || (NREUM = {})).loader_config = { licenseKey: "bcebddc1b5", applicationID: "19636786" }; window.NREUM || (NREUM = {}), __nr_require = function (e, t, n) { function r(n) { if (!t[n]) { var i = t[n] = { exports: {} }; e[n][0].call(i.exports, function (t) { var i = e[n][1][t]; return r(i || t) }, i, i.exports) } return t[n].exports } if ("function" == typeof __nr_require) return __nr_require; for (var i = 0; i < n.length; i++)r(n[i]); return r }({ 1: [function (e, t, n) { function r() { } function i(e, t, n) { return function () { return o(e, [u.now()].concat(c(arguments)), t ? null : this, n), t ? void 0 : this } } var o = e("handle"), a = e(6), c = e(7), f = e("ee").get("tracer"), u = e("loader"), s = NREUM; "undefined" == typeof window.newrelic && (newrelic = s); var d = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"], p = "api-", l = p + "ixn-"; a(d, function (e, t) { s[t] = i(p + t, !0, "api") }), s.addPageAction = i(p + "addPageAction", !0), s.setCurrentRouteName = i(p + "routeName", !0), t.exports = newrelic, s.interaction = function () { return (new r).get() }; var m = r.prototype = { createTracer: function (e, t) { var n = {}, r = this, i = "function" == typeof t; return o(l + "tracer", [u.now(), e, n], r), function () { if (f.emit((i ? "" : "no-") + "fn-start", [u.now(), r, i], n), i) try { return t.apply(this, arguments) } catch (e) { throw f.emit("fn-err", [arguments, this, e], n), e } finally { f.emit("fn-end", [u.now()], n) } } } }; a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (e, t) { m[t] = i(l + t) }), newrelic.noticeError = function (e, t) { "string" == typeof e && (e = new Error(e)), o("err", [e, u.now(), !1, t]) } }, {}], 2: [function (e, t, n) { function r() { return c.exists && performance.now ? Math.round(performance.now()) : (o = Math.max((new Date).getTime(), o)) - a } function i() { return o } var o = (new Date).getTime(), a = o, c = e(8); t.exports = r, t.exports.offset = a, t.exports.getLastTimestamp = i }, {}], 3: [function (e, t, n) { function r(e, t) { var n = e.getEntries(); n.forEach(function (e) { "first-paint" === e.name ? d("timing", ["fp", Math.floor(e.startTime)]) : "first-contentful-paint" === e.name && d("timing", ["fcp", Math.floor(e.startTime)]) }) } function i(e, t) { var n = e.getEntries(); n.length > 0 && d("lcp", [n[n.length - 1]]) } function o(e) { e.getEntries().forEach(function (e) { e.hadRecentInput || d("cls", [e]) }) } function a(e) { if (e instanceof m && !g) { var t = Math.round(e.timeStamp), n = { type: e.type }; t <= p.now() ? n.fid = p.now() - t : t > p.offset && t <= Date.now() ? (t -= p.offset, n.fid = p.now() - t) : t = p.now(), g = !0, d("timing", ["fi", t, n]) } } function c(e) { d("pageHide", [p.now(), e]) } if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) { var f, u, s, d = e("handle"), p = e("loader"), l = e(5), m = NREUM.o.EV; if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) { f = new PerformanceObserver(r); try { f.observe({ entryTypes: ["paint"] }) } catch (v) { } u = new PerformanceObserver(i); try { u.observe({ entryTypes: ["largest-contentful-paint"] }) } catch (v) { } s = new PerformanceObserver(o); try { s.observe({ type: "layout-shift", buffered: !0 }) } catch (v) { } } if ("addEventListener" in document) { var g = !1, y = ["click", "keydown", "mousedown", "pointerdown", "touchstart"]; y.forEach(function (e) { document.addEventListener(e, a, !1) }) } l(c) } }, {}], 4: [function (e, t, n) { function r(e, t) { if (!i) return !1; if (e !== i) return !1; if (!t) return !0; if (!o) return !1; for (var n = o.split("."), r = t.split("."), a = 0; a < r.length; a++)if (r[a] !== n[a]) return !1; return !0 } var i = null, o = null, a = /Version\/(\S+)\s+Safari/; if (navigator.userAgent) { var c = navigator.userAgent, f = c.match(a); f && c.indexOf("Chrome") === -1 && c.indexOf("Chromium") === -1 && (i = "Safari", o = f[1]) } t.exports = { agent: i, version: o, match: r } }, {}], 5: [function (e, t, n) { function r(e) { function t() { e(a && document[a] ? document[a] : document[i] ? "hidden" : "visible") } "addEventListener" in document && o && document.addEventListener(o, t, !1) } t.exports = r; var i, o, a; "undefined" != typeof document.hidden ? (i = "hidden", o = "visibilitychange", a = "visibilityState") : "undefined" != typeof document.msHidden ? (i = "msHidden", o = "msvisibilitychange") : "undefined" != typeof document.webkitHidden && (i = "webkitHidden", o = "webkitvisibilitychange", a = "webkitVisibilityState") }, {}], 6: [function (e, t, n) { function r(e, t) { var n = [], r = "", o = 0; for (r in e) i.call(e, r) && (n[o] = t(r, e[r]), o += 1); return n } var i = Object.prototype.hasOwnProperty; t.exports = r }, {}], 7: [function (e, t, n) { function r(e, t, n) { t || (t = 0), "undefined" == typeof n && (n = e ? e.length : 0); for (var r = -1, i = n - t || 0, o = Array(i < 0 ? 0 : i); ++r < i;)o[r] = e[t + r]; return o } t.exports = r }, {}], 8: [function (e, t, n) { t.exports = { exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart } }, {}], ee: [function (e, t, n) { function r() { } function i(e) { function t(e) { return e && e instanceof r ? e : e ? f(e, c, o) : o() } function n(n, r, i, o) { if (!p.aborted || o) { e && e(n, r, i); for (var a = t(i), c = v(n), f = c.length, u = 0; u < f; u++)c[u].apply(a, r); var d = s[w[n]]; return d && d.push([b, n, r, a]), a } } function l(e, t) { h[e] = v(e).concat(t) } function m(e, t) { var n = h[e]; if (n) for (var r = 0; r < n.length; r++)n[r] === t && n.splice(r, 1) } function v(e) { return h[e] || [] } function g(e) { return d[e] = d[e] || i(n) } function y(e, t) { u(e, function (e, n) { t = t || "feature", w[n] = t, t in s || (s[t] = []) }) } var h = {}, w = {}, b = { on: l, addEventListener: l, removeEventListener: m, emit: n, get: g, listeners: v, context: t, buffer: y, abort: a, aborted: !1 }; return b } function o() { return new r } function a() { (s.api || s.feature) && (p.aborted = !0, s = p.backlog = {}) } var c = "nr@context", f = e("gos"), u = e(6), s = {}, d = {}, p = t.exports = i(); p.backlog = s }, {}], gos: [function (e, t, n) { function r(e, t, n) { if (i.call(e, t)) return e[t]; var r = n(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(e, t, { value: r, writable: !0, enumerable: !1 }), r } catch (o) { } return e[t] = r, r } var i = Object.prototype.hasOwnProperty; t.exports = r }, {}], handle: [function (e, t, n) { function r(e, t, n, r) { i.buffer([e], r), i.emit(e, t, n) } var i = e("ee").get("handle"); t.exports = r, r.ee = i }, {}], id: [function (e, t, n) { function r(e) { var t = typeof e; return !e || "object" !== t && "function" !== t ? -1 : e === window ? 0 : a(e, o, function () { return i++ }) } var i = 1, o = "nr@id", a = e("gos"); t.exports = r }, {}], loader: [function (e, t, n) { function r() { if (!E++) { var e = b.info = NREUM.info, t = p.getElementsByTagName("script")[0]; if (setTimeout(u.abort, 3e4), !(e && e.licenseKey && e.applicationID && t)) return u.abort(); f(h, function (t, n) { e[t] || (e[t] = n) }); var n = a(); c("mark", ["onload", n + b.offset], null, "api"), c("timing", ["load", n]); var r = p.createElement("script"); r.src = "https://" + e.agent, t.parentNode.insertBefore(r, t) } } function i() { "complete" === p.readyState && o() } function o() { c("mark", ["domContent", a() + b.offset], null, "api") } var a = e(2), c = e("handle"), f = e(6), u = e("ee"), s = e(4), d = window, p = d.document, l = "addEventListener", m = "attachEvent", v = d.XMLHttpRequest, g = v && v.prototype; NREUM.o = { ST: setTimeout, SI: d.setImmediate, CT: clearTimeout, XHR: v, REQ: d.Request, EV: d.Event, PR: d.Promise, MO: d.MutationObserver }; var y = "" + location, h = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-1184.min.js" }, w = v && g && g[l] && !/CriOS/.test(navigator.userAgent), b = t.exports = { offset: a.getLastTimestamp(), now: a, origin: y, features: {}, xhrWrappable: w, userAgent: s }; e(1), e(3), p[l] ? (p[l]("DOMContentLoaded", o, !1), d[l]("load", r, !1)) : (p[m]("onreadystatechange", i), d[m]("onload", r)), c("mark", ["firstbyte", a.getLastTimestamp()], null, "api"); var E = 0 }, {}], "wrap-function": [function (e, t, n) { function r(e) { return !(e && e instanceof Function && e.apply && !e[a]) } var i = e("ee"), o = e(7), a = "nr@original", c = Object.prototype.hasOwnProperty, f = !1; t.exports = function (e, t) { function n(e, t, n, i) { function nrWrapper() { var r, a, c, f; try { a = this, r = o(arguments), c = "function" == typeof n ? n(r, a) : n || {} } catch (u) { p([u, "", [r, a, i], c]) } s(t + "start", [r, a, i], c); try { return f = e.apply(a, r) } catch (d) { throw s(t + "err", [r, a, d], c), d } finally { s(t + "end", [r, a, f], c) } } return r(e) ? e : (t || (t = ""), nrWrapper[a] = e, d(e, nrWrapper), nrWrapper) } function u(e, t, i, o) { i || (i = ""); var a, c, f, u = "-" === i.charAt(0); for (f = 0; f < t.length; f++)c = t[f], a = e[c], r(a) || (e[c] = n(a, u ? c + i : i, o, c)) } function s(n, r, i) { if (!f || t) { var o = f; f = !0; try { e.emit(n, r, i, t) } catch (a) { p([a, n, r, i]) } f = o } } function d(e, t) { if (Object.defineProperty && Object.keys) try { var n = Object.keys(e); return n.forEach(function (n) { Object.defineProperty(t, n, { get: function () { return e[n] }, set: function (t) { return e[n] = t, t } }) }), t } catch (r) { p([r]) } for (var i in e) c.call(e, i) && (t[i] = e[i]); return t } function p(t) { try { e.emit("internal-error", t) } catch (n) { } } return e || (e = i), n.inPlace = u, n.flag = a, n } }, {}] }, {}, ["loader"]);</script>
+    <title>Designerdirndl zu Outletpreisen</title>
+    <meta name="description"
+        content="Trachten für Sie und Ihn online bei ❤ LIMBERRY kaufen! ✓ Kostenloser Versand ✓ Top-Marken ✓ Top-Service ✓ Kauf auf Rechnung ✓ Stil Beratung">
+    <meta name="keywords" content="">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://www.dirndl-outlet.net/skin/frontend/outlet/default/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://www.dirndl-outlet.net/skin/frontend/outlet/default/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://www.dirndl-outlet.net/skin/frontend/outlet/default/favicon-16x16.png">
+    <link rel="manifest" href="https://www.dirndl-outlet.net/skin/frontend/outlet/default/site.webmanifest">
+    <link rel="mask-icon" href="https://www.dirndl-outlet.net/skin/frontend/outlet/default/safari-pinned-tab.svg"
+        color="#5bbad5">
+    <link rel="shortcut icon" href="https://www.dirndl-outlet.net/skin/frontend/outlet/default/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/skin/frontend/outlet/default/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script src="./js/t.js.Без названия" data-footer-js-skip="true"></script>
+    <script data-footer-js-skip="true">
+        window.TrackJS && TrackJS.install({
+            token: "cc1c73fc49df429dbc0fdffb9558f180"
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/widgets.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/menu1.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/jqtransform.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/prettyPhoto.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/amlabel.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/amshopby.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/default.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/amscroll.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/slider.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="https://www.dirndl-outlet.net/skin/frontend/default/milano/css/styles-ie.css?t1602003978" media="all" />
+<![endif]-->
+    <!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="https://www.dirndl-outlet.net/skin/frontend/default/milano/css/ie7.css?t1602003978" media="all" />
+<![endif]-->
+    <!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="https://www.dirndl-outlet.net/skin/frontend/default/milano/css/ie9.css?t1602003978" media="all" />
+<![endif]-->
+
+    <link rel="canonical" href="https://www.dirndl-outlet.net/">
+    <meta property="og:title" content="Designerdirndl zu Outletpreisen">
+    <meta property="og:site_name" content="LIMBERRY dein Shop für Trachtenmode">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dirndl-outlet.net/">
+    <meta property="og:image" content="https://cdn.limberry.de/media/wysiwyg/og/limberry.jpg">
+    <meta property="og:description"
+        content="Trachten für Sie und Ihn online bei ❤ LIMBERRY kaufen! ✓ Kostenloser Versand ✓ Top-Marken ✓ Top-Service ✓ Kauf auf Rechnung ✓ Stil Beratung">
+    <meta name="google-site-verification" content="FVabD47Pp7w1I9nI5sgIL6GoQH0vqI63zUjOsVfkE8M">
+    <script async="" src="./js/tags"></script>
+</head>
+
+<body class=" cms-index-index cms-outlet-welcome">
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M48RCL6" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="wrapper">
+        <noscript>
+            <div class="global-site-notice noscript">
+                <div class="notice-inner">
+                    <p>
+                        <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                        Sie müssen JavaScript in Ihrem Browser aktivieren um alle Funktionen in diesem Shop nutzen zu
+                        können. </p>
+                </div>
+            </div>
+        </noscript>
+        <div class="page">
+            <div id="top"></div>
+            <div class="header-small-container hidden-sm">
+                <div class="header">
+                    <!-- <div class="usp-caroussel">
+                        <p class="item-1">Kostenloser Hinversand (DE &amp; AT)</p>
+                        <p class="item-2">Kauf auf Rechnung</p>
+                        <p class="item-3">14 Tage Rückgaberecht</p>
+                        <p class="item-4">Exklusive Auswahl der Top Trachten Marken</p>
+                    </div> -->
+                    <div class="header-left">
+                        <div class="cms-header-links"></div>
+                    </div>
+                    <div class="header-right">
+                        <span class="welcome-msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-container">
+                <div class="header-main-container">
+                    <div class="header">
+                        <div class="header-left header-menu hidden-sm">
+                        </div>
+                        <button type="button" title="Los" class="search-btn-top" onclick="showSerach();">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="search"
+                                style=" fill: black;">
+                                <path class="search_icon"
+                                    d="M91.41 88.59L70.8 68a36.1 36.1 0 1 0-2.8 2.8l20.59 20.61a2 2 0 0 0 2.83-2.83zM12 44a32 32 0 1 1 32 32 32 32 0 0 1-32-32z"
+                                    id="search"></path>
+                            </svg>
+                        </button>
+                        <div class="header-center header-logo">
+                            <a href="https://www.dirndl-outlet.net/" title="Trachten Online Shop: LIMBERRY"
+                                class="logo">
+                                <img class="logo-main"
+                                    src="./img/dirndl-outlet-logo-white.svg"
+                                    alt="Trachten Online Shop: LIMBERRY">
+                            </a>
+                        </div>
+                        <div class="header-right">
+                            <div class="mobile-cart">
+                                <div id="mini_search_block">
+                                    <form id="search_mini_form_mobile"
+                                        action="https://www.dirndl-outlet.net/catalogsearch/result/" method="get">
+                                        <div class="mini_search_wrap">
+                                            <input id="search_mobile" type="text" name="q" value=""
+                                                class="search-input"><button type="submit" title="Los"
+                                                class="search-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                                                    id="search" style="fill: white;">
+                                                    <path class="search_icon"
+                                                        d="M91.41 88.59L70.8 68a36.1 36.1 0 1 0-2.8 2.8l20.59 20.61a2 2 0 0 0 2.83-2.83zM12 44a32 32 0 1 1 32 32 32 32 0 0 1-32-32z"
+                                                        id="search"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div>
+                                    <a href="https://www.dirndl-outlet.net/customer/account/" title="Konto"><img
+                                            src="./img/kundenkonto-white.svg" height="35"
+                                            width="31"></a>
+                                    <a href="https://www.dirndl-outlet.net/checkout/cart/" title="Warenkorb"><img
+                                            src="./img/warenkorb-white.svg" height="35"
+                                            width="31"></a>
+                                </div>
+                            </div>
+                            <div class="header-menu mobile"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-container-outer">
+                    <div class="nav-container">
+                        <div class="nav-container-inner">
+                            <ul id="nav" class="no-home-link">
+                                <li class="level0 nav-1 level-top first">
+                                    <a href="https://www.dirndl-outlet.net/dirndl-sale.html" class="level-top">
+                                        <span>Dirndl</span>
+                                    </a>
+                                </li>
+                                <li class="level0 nav-2 level-top">
+                                    <a href="https://www.dirndl-outlet.net/dirndlblusen-sale.html" class="level-top">
+                                        <span>Dirndlblusen</span>
+                                    </a>
+                                </li>
+                                <li class="level0 nav-3 level-top">
+                                    <a href="https://www.dirndl-outlet.net/trachtenkleider-sale.html" class="level-top">
+                                        <span>Trachtenkleider</span>
+                                    </a>
+                                </li>
+                                <li class="level0 nav-4 level-top">
+                                    <a href="https://www.dirndl-outlet.net/trachtenjacke-damen-sale.html"
+                                        class="level-top">
+                                        <span>Trachtenjacken</span>
+                                    </a>
+                                </li>
+                                <li class="level0 nav-5 level-top last parent">
+                                    <a href="https://www.dirndl-outlet.net/designer-dirndl-sale.html" class="level-top">
+                                        <span>Marken</span>
+                                    </a>
+                                    <ul class="level0">
+                                        <li class="level1 nav-5-1 first">
+                                            <a href="https://www.dirndl-outlet.net/limberry.html">
+                                                <span>Limberry</span>
+                                            </a>
+                                        </li>
+                                        <li class="level1 nav-5-2">
+                                            <a href="https://www.dirndl-outlet.net/julia-trentini.html">
+                                                <span>Julia Trentini</span>
+                                            </a>
+                                        </li>
+                                        <li class="level1 nav-5-3">
+                                            <a href="https://www.dirndl-outlet.net/cocovero.html">
+                                                <span>Cocovero</span>
+                                            </a>
+                                        </li>
+                                        <li class="level1 nav-5-4">
+                                            <a href="https://www.dirndl-outlet.net/alpenherz.html">
+                                                <span>Alpenherz</span>
+                                            </a>
+                                        </li>
+                                        <li class="level1 nav-5-5">
+                                            <a href="https://www.dirndl-outlet.net/amsel-fashion.html">
+                                                <span>Amsel Fashion</span>
+                                            </a>
+                                        </li>
+                                        <li class="level1 nav-5-6">
+                                            <a href="https://www.dirndl-outlet.net/sportalm.html">
+                                                <span>SPORTALM</span>
+                                            </a>
+                                        </li>
+                                        <li class="level1 nav-5-7">
+                                            <a href="https://www.dirndl-outlet.net/kinga-mathe.html">
+                                                <span>KINGA MATHÉ</span>
+                                            </a>
+                                        </li>
+                                        <li class="level1 nav-5-8 last">
+                                            <a href="https://www.dirndl-outlet.net/krueger-dirndl.html">
+                                                <span>Krüger Dirndl </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="level0 custom_link top-search"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-nav-container">
+                    <div id="mobile-menu-button">Menü</div>
+                    <form id="search_mini_form_mobile" action="https://www.dirndl-outlet.net/catalogsearch/result/"
+                        method="get">
+                        <div class="">
+                            <input id="search_mobile" type="text" name="q" value="" class="search-input"><button
+                                type="submit" title="Los" class="search-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="search" style="fill: white;">
+                                    <path class="search_icon"
+                                        d="M91.41 88.59L70.8 68a36.1 36.1 0 1 0-2.8 2.8l20.59 20.61a2 2 0 0 0 2.83-2.83zM12 44a32 32 0 1 1 32 32 32 32 0 0 1-32-32z"
+                                        id="search"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <ul id="mobile-menu">
+                        <li class="level0 nav-1 level-top first">
+                            <a href="https://www.dirndl-outlet.net/dirndl-sale.html" class="level-top">
+                                <span>Dirndl</span>
+                            </a>
+                        </li>
+                        <li class="level0 nav-2 level-top">
+                            <a href="https://www.dirndl-outlet.net/dirndlblusen-sale.html" class="level-top">
+                                <span>Dirndlblusen</span>
+                            </a>
+                        </li>
+                        <li class="level0 nav-3 level-top">
+                            <a href="https://www.dirndl-outlet.net/trachtenkleider-sale.html" class="level-top">
+                                <span>Trachtenkleider</span>
+                            </a>
+                        </li>
+                        <li class="level0 nav-4 level-top">
+                            <a href="https://www.dirndl-outlet.net/trachtenjacke-damen-sale.html" class="level-top">
+                                <span>Trachtenjacken</span>
+                            </a>
+                        </li>
+                        <li class="level0 nav-5 level-top last parent"><span class="open-child">(open)</span>
+                            <a href="https://www.dirndl-outlet.net/designer-dirndl-sale.html" class="level-top">
+                                <span>Marken</span>
+                            </a>
+                            <ul class="level0">
+                                <li class="level1 nav-5-1 first">
+                                    <a href="https://www.dirndl-outlet.net/limberry.html">
+                                        <span>Limberry</span>
+                                    </a>
+                                </li>
+                                <li class="level1 nav-5-2">
+                                    <a href="https://www.dirndl-outlet.net/julia-trentini.html">
+                                        <span>Julia Trentini</span>
+                                    </a>
+                                </li>
+                                <li class="level1 nav-5-3">
+                                    <a href="https://www.dirndl-outlet.net/cocovero.html">
+                                        <span>Cocovero</span>
+                                    </a>
+                                </li>
+                                <li class="level1 nav-5-4">
+                                    <a href="https://www.dirndl-outlet.net/alpenherz.html">
+                                        <span>Alpenherz</span>
+                                    </a>
+                                </li>
+                                <li class="level1 nav-5-5">
+                                    <a href="https://www.dirndl-outlet.net/amsel-fashion.html">
+                                        <span>Amsel Fashion</span>
+                                    </a>
+                                </li>
+                                <li class="level1 nav-5-6">
+                                    <a href="https://www.dirndl-outlet.net/sportalm.html">
+                                        <span>SPORTALM</span>
+                                    </a>
+                                </li>
+                                <li class="level1 nav-5-7">
+                                    <a href="https://www.dirndl-outlet.net/kinga-mathe.html">
+                                        <span>KINGA MATHÉ</span>
+                                    </a>
+                                </li>
+                                <li class="level1 nav-5-8 last">
+                                    <a href="https://www.dirndl-outlet.net/krueger-dirndl.html">
+                                        <span>Krüger Dirndl </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-container col1-layout">
+                <div class="main">
+                    <div class="col-main">
+                        <!-- <div class="content">
+                            <div>Outlet home page content</div>
+                        </div> -->
+                        <style>
+                            <!--
+                            .gender-chooser a {
+                                border: 1px solid black;
+                                display: inline-block;
+                                width: 100%;
+                                box-sizing: border-box;
+                                line-height: 2.3rem;
+                            }
+
+                            .Grid {
+                                display: flex;
+                                flex-wrap: wrap;
+                            }
+
+                            .Grid-cell {
+                                flex: 1 1 50%;
+                                box-sizing: border-box;
+                                text-align: center;
+                                padding-bottom: 5px;
+                            }
+
+                            .Grid.usp {
+                                margin-top: 1rem;
+                                border-top: 1px solid black;
+                                border-bottom: 1px solid black;
+                                line-height: 1;
+                            }
+
+                            .Grid-cell.usp {
+                                flex: 1 1 25%;
+                                padding: 10px;
+                            }
+
+                            .Grid-cell.usp span {
+                                font-size: 0.5rem;
+                            }
+
+                            .Grid-cell:nth-child(even) {
+                                padding-left: 5px
+                            }
+
+                            .Grid-cell:nth-child(odd) {
+                                padding-right: 5px
+                            }
+
+                            .Grid-cell img,
+                            .inspiration img {
+                                width: 100%;
+                            }
+
+                            .Grid-cell span {
+                                font-size: 1rem;
+                            }
+
+                            .inspiration img {
+                                margin-top: 1.5rem;
+                                margin-bottom: 1rem;
+                            }
+                            -->
+                        </style>
+                        <div class="row">
+                            <div class="col-sm-8 hidden-sm"><a
+                                    href="https://www.dirndl-outlet.net/dirndl-sale.html"><img
+                                        src="/img/dirndl-outlet-hero-banner-dirndl-1183x700.webp"
+                                        style="
+                                        object-fit: cover;
+                                        object-position: center top;
+                                        height: 74vH;
+                                        width: 100%;
+                                        " alt=""></a></div><a href="https://www.dirndl-outlet.net/dirndl-sale.html">
+                            </a>
+                            <div class="col-sm-12 hidden-md hidden-lg"><a
+                                    href="https://www.dirndl-outlet.net/dirndl-sale.html"></a><a
+                                    href="https://www.dirndl-outlet.net/dirndl-sale.html"><img
+                                        src="/img/dirndl-outlet-hero-5-mobile.jpg"
+                                        alt=""></a></div>
+
+                            
+                            <div class="col-sm-6 hidden-sm hidden-xs col-md-4">
+                                <a href="https://www.dirndl-outlet.net/trachtenjacke-damen-sale.html" style="margin-bottom: 20px; display: inline-block;">
+                                <img src="/img/dirndl-outlet-dirndlblusen-banner-566x335.jpg"></a>
+                                <a href="https://www.dirndl-outlet.net/trachtenjacke-damen-sale.html">
+                                <img src="/img/dirndl-outlet-jacken-banner-566x335.jpg"></a>
+                            </div>
+                    
+                        </div>
+                        <a href="https://www.dirndl-outlet.net/dirndl-sale.html">
+                            <div
+                                style="text-align: center; font-weight: bold; margin: 2.5rem 2.5rem 2rem 2.5rem; color: black; text-transform: uppercase;">
+                                <h2>Unsere Marken</h2>
+                            </div>
+                        </a>
+
+                        <div class="row mb-5" style="display: flex; align-items: flex-end;">
+                            <div class="col-sm-4 mb-4 col-md-2">
+                                <a href="#">
+                                    <img src="./img/limberry.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 mb-4 col-md-2">
+                                <a href="#">
+                                    <img src="./img/Jrenlini.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 mb-4 col-md-2">
+                                <a href="#">
+                                    <img src="./img/M-pen.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 mb-4 col-md-2">
+                                <a href="#">
+                                    <img src="./img/Amsel.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 mb-4 col-md-2">
+                                <a href="#">
+                                    <img src="./img/coc.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 mb-4 col-md-2">
+                                <a href="#">
+                                    <img src="./img/Got.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row"><a href="https://www.dirndl-outlet.net/dirndl-sale.html">
+                            </a>
+                            <div class="col-sm-12 mb-3 col-md-4 hidden-sm"><a
+                                    href="https://www.dirndl-outlet.net/dirndl-sale.html"></a><a
+                                    href="https://www.dirndl-outlet.net/dirndl-online.html"><img
+                                        src="/img/dirndl-outlet-trachtenkleider-566x335.jpg"></a></div>
+                            <div class="col-sm-12 mb-3 col-md-4 hidden-sm"><a
+                                    href="https://www.dirndl-outlet.net/dirndlblusen-sale.html"><img
+                                        src="/img/dirndl-outlet-deal-der-woche.jpg"></a></div>
+                            <div class="col-sm-12 mb-3 col-md-4 mb-4 hidden-sm"><a
+                                    href="https://www.dirndl-outlet.net/trachtenjacke-damen-sale.html"><img
+                                        src="/img/dirndl-outlet-hochzeit.jpg"></a></div>
+
+                            <div class="col-sm-12 mb-3 hidden-md hidden-lg"><a
+                                    href="https://www.dirndl-outlet.net/dirndl-sale.html"></a><a
+                                    href="https://www.dirndl-outlet.net/dirndl-online.html"><img
+                                        src="/img/dirndl-outlet-trachtenklieder-mobile.jpg"></a></div>
+                            <div class="col-sm-12 mb-3 hidden-md hidden-lg"><a
+                                    href="https://www.dirndl-outlet.net/dirndlblusen-sale.html"><img
+                                        src="/img/dirndl-outlet-deal-der-woche_1.jpg"></a></div>
+                            <div class="col-sm-12 mb-3 hidden-md hidden-lg"><a
+                                    href="https://www.dirndl-outlet.net/trachtenjacke-damen-sale.html"><img
+                                        src="/img/dirndl-outlet-trachtenjacken-mobile.jpg"></a></div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-12 mb-3 col-md-4 hidden-sm ><a
+                                        href="https://www.dirndl-outlet.net/dirndl-sale.html"></a><a
+                                        href="https://www.dirndl-outlet.net/dirndl-online.html"><img
+                                            src="/img/dirndl-outlet-neuheiten.jpg"></a></div>
+                                <div class="col-sm-12 mb-3 col-md-4 hidden-sm"><a
+                                        href="https://www.dirndl-outlet.net/dirndlblusen-sale.html"><img
+                                            src="/img/dirndl-outlet-blusen-unter-80eur.jpg"></a></div>
+                                <div class="col-sm-12 mb-3 col-md-4 hidden-sm"><a
+                                        href="https://www.dirndl-outlet.net/trachtenjacke-damen-sale.html"><img
+                                            src="/img/dirndl-unter-200eur.jpg"></a></div>
+                        </div>
+                        
+                            
+                       
+                        
+                        <div style="text-align: center; margin: 2.5rem 2.5rem 2rem 2.5rem; color: black;">
+                            <h2>Unsere Top-Marken</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/limberry.html%3E%3Cimg%20src=" https:=""
+                                    cdn.limberry.de="" media="" wysiwyg=""
+                                    dirndl-outlet-designer-limberry-sale.jpg"=""><span
+                                        style="font-size: medium;">Limberry</span></a></div>
+                            <div class="col-sm-6 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/julia-trentini.html%3E%3Cimg%20src=" https:=""
+                                    cdn.limberry.de="" media="" wysiwyg=""
+                                    dirndl-outlet-designer-trentini-sale.jpg"=""><span style="font-size: medium;">Julia
+                                        Trentini</span></a></div>
+                            <div class="col-sm-6 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/cocovero.html%3E%3Cimg%20src=" https:=""
+                                    cdn.limberry.de="" media="" wysiwyg=""
+                                    dirndl-outlet-designer-cocovero-sale.jpg"=""><span
+                                        style="font-size: medium;">CocoVero</span></a></div>
+                            <div class="col-sm-6 col-md-2"><a href="https://www.dirndl-outlet.net/alpenherz.html"><img
+                                        src="./img/dirndl-outlet-designer-alpenherz-sale.jpg"><span
+                                        style="font-size: medium;">Alpenherz</span></a></div>
+                            <div class="col-sm-6 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/amsel-fashion.html"><img
+                                        src="./img/dirndl-outlet-designer-amsel-sale.jpg"><span
+                                        style="font-size: medium;">Amsel</span></a></div>
+                            <div class="col-sm-6 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/designer-dirndl-sale.html"><img
+                                        src="./img/dirndl-outlet-designer-ani.gif"><span
+                                        style="font-size: medium;">Alle Designer</span></a></div>
+                        </div>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-menu-container">
+                <div class="footer-left">
+                    <div class="footer-menu"></div>
+                </div>
+                <div class="clear"></div>
+                <p></p>
+                <div class="widget widget-static-block">
+                    <div class="footer-menu container" style="padding: 1.5rem;">
+                        <div class="row">
+                            <span class="footer-head col-sm-12">
+                                <center> Die exklusivsten Marken</center>
+                            </span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/limberry.html"
+                                    title="Die schönsten Trachten von LIMBERRY zum besten Preis bei Dirndl-Outlet bestellen"
+                                    target="_self">LIMBERRY</a></span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/julia-trentini.html"
+                                    title="Die schönsten Trachten von Julia Trentini zum besten Preis bei Dirndl-Outlet bestellen"
+                                    target="_self">Julia Trentini</a></span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/cocovero.html"
+                                    title="Die schönsten Trachten von CocoVero zum besten Preis bei Dirndl-Outlet bestellen"
+                                    target="_self">CocoVero</a></span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/amsel-fashion.html"
+                                    title="Die schönsten Trachten von Amsel Fashion zum besten Preis bei Dirndl-Outlet bestellen"
+                                    target="_self">Amsel Fashion</a></span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/kinga-mathe.html"
+                                    title="Die schönsten Trachten von Kinga Mathe zum besten Preis bei Dirndl-Outlet bestellen"
+                                    target="_self">Kinga Mathe</a></span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/miss-limberry.html"
+                                    title="Die schönsten Trachten von Miss LIMBERRY zum besten Preis bei Dirndl-Outlet bestellen"
+                                    target="_self">Miss LIMBERRY</a></span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/alpenherz.html"
+                                    title="Die schönsten Trachten von Alpenherz zum besten Preis bei Dirndl-Outlet bestellen"
+                                    target="_self">Alpenherz</a></span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/krueger-dirndl.html"
+                                    title=" Die schönsten Trachten von Krüger Dirndl zum besten Preis bei Dirndl-Outlet bestellen"
+                                    target="_self">Krüger Dirndl</a></span>
+                            <span class="footer-head col-sm-12">
+                                <center> <br> Die meistgesuchten Kategorien bei Dirndl-Outlet </center>
+                            </span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/dirndl-sale.html" title="Dirndl bestellen"
+                                    target="_self">Dirndl</a></span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/dirndlblusen-sale.html"
+                                    title="Dirndlblusen bestellen" target="_self">Dirndlblusen</a></span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/trachtenkleider-sale.html"
+                                    title="Trachtenkleider bestellen" target="_self">Trachtenkleider</a></span>
+                            <span class="footer-item col-sm-4 col-md-2"><a
+                                    href="https://www.dirndl-outlet.net/trachtenjacke-damen-sale.html"
+                                    title="Trachtenjacken bestellen" target="_self">Trachtenjacken</a></span>
+                        </div>
+                    </div>
+                </div>
+                <p></p>
+                <div class="container">
+                    <div class="row  cols-sm-12 cols-md-3">
+                        <div class="footer-section reasons"><span class="footer-heading">Bequem und sicher
+                                bestellen</span> <span class="footer-paypal"><img alt=""
+                                    src="./img/zahlen-bei-limberry.webp"></span> <span
+                                class="footer-dhl"><img alt=""
+                                    src="./img/versand-dhl-limberry.jpg"></span></div>
+                        <div class="footer-section contact"><span class="footer-heading">Haben Sie noch Fragen?</span>
+                            <span>E-Mail: <a
+                                    href="mailto:service@dirndl-outlet.net">service@dirndl-outlet.net</a></span><br>
+                            <span>Telefon: <a href="tel:+49405367418">+49 40 536 74 18 (Mo-Fr 10-17h)</a></span></div>
+                        <div class="footer-section about-us"><span class="footer-heading">Über Dirndl-Outlet</span> <a
+                                href="https://www.dirndl-outlet.net/versandkosten" target="_blank">Versandkosten</a>|<a
+                                href="https://www.dirndl-outlet.net/faq">FAQ</a>|<a
+                                href="https://www.dirndl-outlet.net/agb/#Widerruf">Rückgabe</a><br> <a
+                                href="https://www.dirndl-outlet.net/impressum/">Impressum</a>|<a
+                                href="https://www.dirndl-outlet.net/agb/">AGB</a>|<a
+                                href="https://www.dirndl-outlet.net/datenschutz/">Datenschutz</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="message" style="display: none;"><a href="https://www.dirndl-outlet.net/#top" id="top-link">&nbsp;</a>
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="./js/prototype.js.Без названия"></script>
+    <script type="text/javascript" src="./js/ccard.js.Без названия"></script>
+    <script type="text/javascript" src="./js/validation.js.Без названия"></script>
+    <script type="text/javascript" src="./js/builder.js.Без названия"></script>
+    <script type="text/javascript" src="./js/effects.js.Без названия"></script>
+    <script type="text/javascript" src="./js/dragdrop.js.Без названия"></script>
+    <script type="text/javascript" src="./js/controls.js.Без названия"></script>
+    <script type="text/javascript" src="./js/slider.js.Без названия"></script>
+    <script type="text/javascript" src="./js/js.js.Без названия"></script>
+    <script type="text/javascript" src="./js/form.js.Без названия"></script>
+    <script type="text/javascript" src="./js/translate.js.Без названия"></script>
+    <script type="text/javascript" src="./js/cookies.js.Без названия"></script>
+    <script type="text/javascript" src="./js/jquery-1.8.3.min.js.Без названия"></script>
+    <script type="text/javascript" src="./js/jquery.noconflict.js.Без названия"></script>
+    <script type="text/javascript" src="./js/jquery.func.js.Без названия"></script>
+    <script type="text/javascript" src="./js/jquery.hoverIntent.min.js.Без названия"></script>
+    <script type="text/javascript" src="./js/jquery.megamenu.js.Без названия"></script>
+    <script type="text/javascript" src="./js/jquery.mobilemenu.js.Без названия"></script>
+    <script type="text/javascript" src="./js/sizescroller.js.Без названия"></script>
+    <script type="text/javascript" src="./js/jquery.jqtransform.js.Без названия"></script>
+    <script type="text/javascript" src="./js/jquery.prettyPhoto.js.Без названия"></script>
+    <script type="text/javascript" src="./js/twitterFetcher_min.js.Без названия"></script>
+    <script type="text/javascript" src="./js/popup.js.Без названия"></script>
+    <script type="text/javascript" src="./js/menu.js.Без названия"></script>
+    <script type="text/javascript" src="./js/amscroll.js.Без названия"></script>
+    <script type="text/javascript" src="./js/jquery.slider.js.Без названия"></script>
+    <script type="text/javascript" src="./js/jquery.morecontent.min.js.Без названия"></script>
+    <script type="text/javascript" src="./js/jquery.DOMwindow.js.Без названия"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="https://www.dirndl-outlet.net/js/lib/ds-sleight.js?t1602003978"></script>
+    <script type="text/javascript" src="https://www.dirndl-outlet.net/skin/frontend/base/default/js/ie6.js?t1602003978"></script>
+
+    <![endif]-->
+<script type="text/javascript">
+    var BASE_URL = 'https://www.dirndl-outlet.net/';
+    var CUSTOM_LINK_URL = '';  
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    optionalZipCountries = [];
+//]]>
+</script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-178154721-1', 'auto');
+
+        ga('set', 'anonymizeIp', true);
+
+
+    </script>
+    <script>
+        var dataLayer = [({ "customerLoggedIn": 0, "customerId": 0, "customerGroupId": "1", "customerGroupCode": "GENERAL", "pageType": "cms\/index\/index" })];
+        dataLayer.push({ "ecommerce": { "currencyCode": "EUR" } });
+        (function (w, d, s, l, i) {
+            if (i == '') { return console.log('No GTM ID provided'); }
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            if (i == 'DEBUG') return console.log(w[l]);
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M48RCL6');
+    </script>
+    <script type="text/javascript" src="./js/slick.min.js.Без названия"></script>
+    <script type="text/javascript"
+        src="./js/66612ba4-b1e1-442f-95cc-7ffdf1f3611e.js.Без названия"></script>
+    <script src="./js/velocity.min.js.Без названия"></script>
+    <script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({ "Please select an option.": "Bitte w\u00e4hlen Sie eine Option.", "This is a required field.": "Dies ist ein Pflichtfeld.", "Please enter a valid number in this field.": "Bitte geben Sie eine g\u00fcltige Nummer in dieses Feld ein.", "The value is not within the specified range.": "Der Wert ist nicht innerhalb des erlaubten Bereichs.", "Please use letters only (a-z or A-Z) in this field.": "Bitte verwenden Sie nur die Zeichen (a-z oder A-Z) in diesem Feld.", "Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.": "Bitte benutzen Sie nur Buchstaben (a-z), Ziffern (0-9) oder Unterstriche (_) in diesem Feld, das erste Zeichen sollte ein Buchstabe sein.", "Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.": "Bitte tragen Sie nur Buchstaben (a-z oder A-Z), bzw. Zahlen (0-9) in dieses Feld ein. Keine Freizeichen oder andere Zeichen sind erlaubt.", "Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.": "Bitte verwenden Sie nur Buchstaben (a-z oder A-Z), Zahlen (0-9)  und Freizeichen oder # f\u00fcr dieses Feld verwenden.", "Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.": "Bitte geben Sie eine g\u00fcltige Telefonnummer ein. Zum Beispiel (123) 456-7890 oder 123-456-7890.", "Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.": "Bitte tragen Sie eine g\u00fcltige Faxnummer ein. Zum Beispiel (123) 456-7890 oder 123-456-7890.", "Please enter a valid date.": "Bitte geben Sie ein g\u00fcltiges Datum ein.", "Please enter a valid email address. For example johndoe@domain.com.": "Bitte geben Sie eine g\u00fcltige E-Mail Adresse ein. Zum Beispiel johndoe@domain.de.", "Please use only visible characters and spaces.": "Bitte nur sichtbare Zeichen verwenden.", "Please make sure your passwords match.": "Bitte stellen Sie sicher, dass Ihre Passw\u00f6rter \u00fcbereinstimmen.", "Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)": "Bitte geben Sie eine g\u00fcltige URL ein. M\u00f6gliche Protokolle (http:\/\/, https:\/\/ or ftp:\/\/)", "Please enter a valid URL. For example http:\/\/www.example.com or www.example.com": "Bitte geben Sie eine g\u00fcltige URL ein. Zum Beispiel http:\/\/www.beispiel.de oder www.beispiel.de", "Please enter a valid XML-identifier. For example something_1, block5, id-4.": "Bitte geben Sie einen g\u00fcltigen XML-Identifizierer an. Zum Beispiel irgendetwas_1, block5, id-4.", "Please enter a valid social security number. For example 123-45-6789.": "Bitte geben Sie eine g\u00fcltige Sozialversicherungsnummer ein. Zum Beispiel 123-45-6789.", "Please enter a valid zip code. For example 90602 or 90602-1234.": "Bitte geben Sie eine g\u00fcltige Postleitzahl ein. Zum Beispiel 21335.", "Please enter a valid zip code.": "Bitte geben Sie eine g\u00fcltige Postleitzahl ein.", "Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.": "Bitte benutzen Sie dieses Datumsformat: tt\/mm\/jjjj. Zum Beispiel 17\/03\/2006 f\u00fcr den 17. M\u00e4rz 2006.", "Please enter a valid $ amount. For example $100.00.": "Bitte geben Sie einen g\u00fcltigen Betrag ein. Zum Beispiel 100,00 \u20ac.", "Please select one of the above options.": "Bitte w\u00e4hlen Sie eine der oberen Optionen.", "Please select one of the options.": "Bitte w\u00e4hlen Sie eine der Optionen.", "Please select State\/Province.": "Bitte Land\/Bundesland w\u00e4hlen.", "Please enter a number greater than 0 in this field.": "Bitte geben Sie eine Zahl gr\u00f6\u00dfer 0 in dieses Feld ein.", "Please enter a number 0 or greater in this field.": "Bitte tragen Sie eine Zahl 0 oder gr\u00f6\u00dfer in dieses Feld ein.", "Please enter a valid credit card number.": "Bitte geben Sie eine g\u00fcltige Kreditkartennummer ein.", "Incorrect credit card expiration date.": "Falsches Kreditkarten Ablaufdatum.", "Please enter a valid credit card verification number.": "Bitte tragen Sie eine g\u00fcltige Kreditkarten-Pr\u00fcfnummer ein.", "Please use only letters (a-z or A-Z), numbers (0-9) or underscore(_) in this field, first character should be a letter.": "Bitte nur Buchstaben (a-z or A-Z), Zahlen (0-9) oder Unterstriche(_) in diesem Feld verwenden, das erste Zeichen sollte ein Buchstabe sein.", "Text length does not satisfy specified text range.": "Text L\u00e4nge entspricht nicht der gesetzten Bereichs.", "Please enter a number lower than 100.": "Bitte tragen Sie eine Zahl ein die niedriger wie 100 ist.", "Please wait, loading...": "Bitte warten, wird geladen...", "This date is a required value.": "Das Datum ist eine ben\u00f6tigte Angabe.", "Please enter a valid day (1-%d).": "Bitte geben Sie einen g\u00fcltigen Tag an (1-%d).", "Please enter a valid month (1-12).": "Bitte geben Sie einen g\u00fcltigen Monat an (1-12).", "Please enter a valid year (1900-%d).": "Bitte geben Sie ein g\u00fcltiges Jahr an (1900-%d).", "Please enter a valid full date.": "Bitte geben Sie ein g\u00fcltiges Datum ein.", "Complete": "Vollst\u00e4ndig", "Add Products": "Artikel hinzuf\u00fcgen", "Please choose to register or to checkout as a guest": "Bitte registrieren Sie sich, oder gehen Sie als Gast zur Kasse", "Please specify shipping method.": "Bitte bestimmen Sie die Versandart.", "Your order cannot be completed at this time as there is no payment methods available for it.": "Ihre Bestellung kann momentan nicht abgeschlossen werden, da keine Bezahlmethoden daf\u00fcr verf\u00fcgbar sind.", "Please specify payment method.": "Bitte bestimmen Sie die Bezahlmethode.", "Add to Cart": "In den Warenkorb", "In Stock": "Auf Lager", "Out of Stock": "Nicht auf Lager" });
+        //]]></script>
+    <!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'https://www.dirndl-outlet.net/js/blank.html';
+    var BLANK_IMG = 'https://www.dirndl-outlet.net/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+    <script type="text/javascript">
+        //<![CDATA[
+        var searchForm = new Varien.searchForm('search_mini_form_mobile', 'search_mobile', 'Suchen...');
+        //]]>
+    </script>
+    <script type="text/javascript">
+        //<![CDATA[
+        var searchForm = new Varien.searchForm('search_mini_form_mobile', 'search_mobile', 'Suchen...');
+        //]]>
+    </script>
+    <script>
+
+        function showSerach() {
+            var _search_mini_form_mobile = document.getElementById("search_mini_form_mobile");
+            console.log(_search_mini_form_mobile.style.display);
+            if (_search_mini_form_mobile.style.display === "none" || _search_mini_form_mobile.style.display === "") {
+                _search_mini_form_mobile.style.display = "block";
+                console.log("set block");
+            } else {
+                console.log("set block");
+                _search_mini_form_mobile.style.display = "none";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        var amscroll_object = new amscroll();
+        var amscroll_params = {
+            'page': '0',
+            'actionMode': 'auto',
+            'loadingImage': 'https://www.dirndl-outlet.net/skin/frontend/base/default/images/amscroll-scroll.gif',
+            'pageNumbers': '0',
+            'loadNextStyle': 'background: #3A4F62;',
+            'loadingTextButton': 'Load next',
+            'progressbar': { "enabled": "0", "background": "#3A4F62", "offset": "left: 50%;margin-left: -80px; bottom: 1%;z-index: 99999;", "width": "194px" },
+            'remove_hash': '1',
+            'page_text': 'Page #',
+            'page_of_text': 'Page {0} of {1}'
+        };
+
+        var amscroll_product_container_group = '#products-grid'; var amscroll_product_container = 'ul.products-grid2'; var amscroll_toolbar = 'div.toolbar'; var amscroll_toolbar_bottom = 'div.toolbar-bottom'; var amscroll_pager = 'div.pager'; document.observe("dom:loaded", function () {
+            if ($$('#products-grid').length != 0) {
+                amscroll_object.init(amscroll_params);
+            }
+        });
+
+
+        Event.observe(window, 'scroll', function (event) {
+            if (typeof (amscroll_object) == 'undefined') {
+                return;
+            }
+            if ($$('#products-grid').length != 0) {
+                amscroll_object.handleScroll();
+            }
+        });
+
+
+    </script>
+    <script type="text/javascript">// <![CDATA[
+        jQuery(document).ready(function () {
+            jQuery('.category-description').moreContent();
+        });
+// ]]></script>
+    <script type="text/javascript">
+        var amlabel_selector = '.product-image';
+    </script>
+    <script type="text/javascript" src="./js/ld.js.Без названия"
+        async="true"></script>
+    <script type="text/javascript">
+        var deviceType = (window.innerWidth <= 767) ? 'm' : (window.innerWidth >= 980) ? 'd' : 't';
+        window.criteo_q = window.criteo_q || [];
+        window.criteo_q.push({ "event": "setSiteType", "type": deviceType, "ecpplugin": "magento-1.6.4" });
+        window.criteo_q.push({ "event": "setAccount", "account": "51777" },
+            { "event": "setEmail", "email": "" },
+            { "event": "viewHome" });
+
+    </script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            "event": "crto_homepage",
+            "crto": { "email": "" }
+        });
+    </script>
+    <script>
+        ga('send', 'pageview', '');
+    </script>
+    <script type="text/javascript">
+        (function () {
+            var x = document.createElement("script");
+            x.async = true;
+            x.src = "https://creativecdn.com/tags?type=script&id=pr_GurcHum5MofNLxE4pu2N_home&id=pr_GurcHum5MofNLxE4pu2N_uid_unknown";
+            document.getElementsByTagName("head")[0].appendChild(x);
+        }());
+    </script>
+    <script
+        type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net", "licenseKey": "bcebddc1b5", "applicationID": "19636786", "transactionName": "MVUBYEFUCEYEUUZZCQgfIldHXAlbSlFfQ0kPXgdRSxoPWwFXSg==", "queueTime": 0, "applicationTime": 163, "atts": "HRICFglOG0g=", "errorBeacon": "bam.nr-data.net", "agent": "" }</script>
+    <div id="criteo-tags-div" style="display: none;"></div>
+    <div style="display: none; visibility: hidden;">
+        <script>!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js"); fbq("init", "825001008270925"); fbq("track", "PageView");</script>
+        <noscript></noscript>
+    </div>
+    <script type="text/javascript" id="">fbq("track", "PageView");</script>
+    <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon763846917967"><img
+            style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon239511516639" width="0"
+            height="0" alt="" src="./js/0"></div><iframe height="0" width="0"
+        title="Criteo DIS iframe" style="display: none;"
+        src="./js/saved_resource.html"></iframe>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

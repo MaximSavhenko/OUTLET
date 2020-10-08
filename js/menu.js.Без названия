@@ -1,0 +1,15 @@
+var LimberryMenu = Class.create();
+LimberryMenu.prototype = {
+    initialize: function () {
+
+    },
+    setLimberryMenu: function (gender) {
+        Mage.Cookies.set('limberry_menu',gender);
+    },
+
+    getLimberryMenu: function () {
+        return Mage.Cookies.get('limberry_menu');
+    }
+};
+
+var limberryMenu = new LimberryMenu();

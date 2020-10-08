@@ -1,0 +1,63 @@
+var list_lim_hero_size = document.getElementsByClassName("lim_hero_size");
+if (list_lim_hero_size.length > 0) {
+    var lim_hero_size = list_lim_hero_size[0];
+    var dd = lim_hero_size.getElementsByTagName("dd")[0];
+    var ol = dd.getElementsByTagName("ol")[0];
+    var li = ol.getElementsByTagName("li");
+
+    var count = countActive(li);
+    if (count > 0) {
+        var back = document.createElement("button");
+        var next = document.createElement("button");
+        back.innerHTML = "<";
+        next.innerHTML = ">";
+        back.className = "back";
+        next.className = "next";
+        dd.parentNode.insertBefore(back, dd);
+        insertAfter(ol, next);
+
+        var btnext = document.getElementsByClassName('next')[0];
+        btnext.onclick = function () {
+            sideScroll(dd, 'right', 25, 100, 10);
+        };
+
+        var btback = document.getElementsByClassName('back')[0];
+        btback.onclick = function () {
+
+            sideScroll(dd, 'left', 25, 100, 10);
+        };
+    }else{
+        dd.style.display = "none";
+    }
+}
+
+function insertAfter(referenceNode, newNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+
+function sideScroll(element, direction, speed, distance, step) {
+    scrollAmount = 0;
+    var slideTimer = setInterval(function () {
+        if (direction == 'left') {
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if (scrollAmount >= distance) {
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+}
+
+function isHidden(el) {
+    return (el.offsetParent === null)
+}
+
+function countActive(el){
+    var count = 0;
+    for (let item of li) {
+        count += (isHidden(item)) ? 0 : 1;
+    }
+    return count;
+}
