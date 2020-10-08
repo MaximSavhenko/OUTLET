@@ -18,8 +18,9 @@
 }
 
 .page, .footer-container {
-    max-width: 1800px;
+    max-width: 1400px;
     margin: auto;
+    padding: 0 15px;
 }
 
 .category-title h1 {
@@ -450,6 +451,7 @@ li.top-search {
     .header-container {
         margin: 0;
         height: 181px;
+        position: relative;
     }
 
     .header-main-container .header-left,
@@ -461,9 +463,9 @@ li.top-search {
     }
 
     .header-main-container .header-right {
-        right: 40px;
+        right: 0;
         margin-right: 1.5em;
-        top: 50px;
+        top: 30px;
     }
 
     .header-main-container .header-right a {
