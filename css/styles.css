@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'OpenSans-SemiBold';
-    src: url('/fonts/OpenSans-SemiBold.eot');
-    src: url('/fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/OpenSans-SemiBold.woff2') format('woff2'),
-        url('/fonts/OpenSans-SemiBold.woff') format('woff'),
-        url('/fonts/OpenSans-SemiBold.ttf') format('truetype'),
-        url('/fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg');
+    src: url('../fonts/OpenSans-SemiBold.eot');
+    src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+        url('../fonts/OpenSans-SemiBold.ttf') format('truetype'),
+        url('../fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
