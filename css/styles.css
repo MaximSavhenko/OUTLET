@@ -222,9 +222,6 @@ img.label-overlay, .Grid-cell img.label-overlay {
 
 .mobile-cart {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 116px;
 }
 
 .mini_search_wrap{
@@ -244,8 +241,8 @@ li.top-search {
 .mini_search_block {
     position: absolute;
     top: 26px;
-    right: 180px;
-    width: 67%;
+    right: 166px;
+    width: 69%;
     z-index: -1;
 }
 
@@ -277,7 +274,7 @@ li.top-search {
 .navbar-search-toggle:after {
     position: absolute;
     transition: .3s all ease;
-    top: 3px;
+    top: 9px;
     left: -27px;
     width: 29px;
 }
