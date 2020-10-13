@@ -136,33 +136,31 @@
                         </div>
                         <div class="header-right">
                             <div class="mobile-cart">
-                                <div id="mini_search_block">
-                                    <form id="search_mini_form_mobile"
-                                        action="https://www.dirndl-outlet.net/catalogsearch/result/" method="get">
-                                        <div class="mini_search_wrap">
-                                            <input id="search_mobile" type="text" name="q" value=""
-                                                class="search-input"><button type="submit" title="Los"
-                                                class="search-btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
-                                                    id="search" style="fill: white;">
-                                                    <path class="search_icon"
-                                                        d="M91.41 88.59L70.8 68a36.1 36.1 0 1 0-2.8 2.8l20.59 20.61a2 2 0 0 0 2.83-2.83zM12 44a32 32 0 1 1 32 32 32 32 0 0 1-32-32z"
-                                                        id="search"></path>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
                                 <div>
+                                    <img src="./img/suche-white.svg" alt="search" height="31" width="29" class="btn__search-icon"/>
                                     <a href="https://www.dirndl-outlet.net/customer/account/" title="Konto"><img
                                             src="./img/kundenkonto-white.svg" height="35"
-                                            width="31"></a>
+                                            width="29"></a>
                                     <a href="https://www.dirndl-outlet.net/checkout/cart/" title="Warenkorb"><img
                                             src="./img/warenkorb-white.svg" height="35"
-                                            width="31"></a>
+                                            width="29"></a>
                                 </div>
                             </div>
                             <div class="header-menu mobile"></div>
+                        </div>
+                        <div class="mini_search_block">
+                            <form id="search_mini_form_mobile" action="https://www.dirndl-outlet.net/catalogsearch/result/" method="get">
+                                <div class="mini_search_wrap">
+                                    <input id="search_mobile" type="text" name="q" value="" class="search-input">
+                                    <button type="submit" title="Los" class="search-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="search" style="fill: white;">
+                                            <path class="search_icon"
+                                                d="M91.41 88.59L70.8 68a36.1 36.1 0 1 0-2.8 2.8l20.59 20.61a2 2 0 0 0 2.83-2.83zM12 44a32 32 0 1 1 32 32 32 32 0 0 1-32-32z"
+                                                id="search"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -245,11 +243,10 @@
                 </div>
                 <div class="mobile-nav-container">
                     <div id="mobile-menu-button">Menü</div>
-                    <form id="search_mini_form_mobile" action="https://www.dirndl-outlet.net/catalogsearch/result/"
-                        method="get">
+                    <form id="search_mini_form_mobile" action="https://www.dirndl-outlet.net/catalogsearch/result/" method="get">
                         <div class="">
-                            <input id="search_mobile" type="text" name="q" value="" class="search-input"><button
-                                type="submit" title="Los" class="search-btn">
+                            <input id="search_mobile" type="text" name="q" value="" class="search-input">
+                            <button type="submit" title="Los" class="search-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="search" style="fill: white;">
                                     <path class="search_icon"
                                         d="M91.41 88.59L70.8 68a36.1 36.1 0 1 0-2.8 2.8l20.59 20.61a2 2 0 0 0 2.83-2.83zM12 44a32 32 0 1 1 32 32 32 32 0 0 1-32-32z"
@@ -395,6 +392,10 @@
                                 margin-bottom: 1rem;
                             }
                             -->
+
+                            .page {
+                                max-width: 1400px;
+                            }
                         </style>
                         <div class="row">
                             <div class="col-sm-8 hidden-sm"><a
@@ -403,7 +404,7 @@
                                         style="
                                         object-fit: cover;
                                         object-position: center top;
-                                        height: 57vH;
+                                        height: 100%;
                                         width: 100%;
                                         " alt=""></a></div><a href="https://www.dirndl-outlet.net/dirndl-sale.html">
                             </a>
@@ -429,7 +430,7 @@
                             </div>
                         </a>
 
-                        <div class="row mb-5" style="display: flex; align-items: flex-end;">
+                        <div class="row mb-5" style="display: flex; align-items: flex-end; margin-bottom: 37px;">
                             <div class="col-sm-4 mb-4 col-md-2">
                                 <a href="#">
                                     <img src="./img/limberry.png" alt="">
@@ -552,7 +553,7 @@
                     <div class="footer-menu container" style="padding: 1.5rem;">
                         <div class="row">
                             <span class="footer-head col-sm-12">
-                                <center> Die exklusivsten Marken</center>
+                                <h2> Die exklusivsten Marken</h2>
                             </span>
                             <span class="footer-item col-sm-4 col-md-2"><a
                                     href="https://www.dirndl-outlet.net/limberry.html"
@@ -632,7 +633,7 @@
 
 
     </div>
-
+    <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/prototype.js.Без названия"></script>
     <script type="text/javascript" src="./js/ccard.js.Без названия"></script>
     <script type="text/javascript" src="./js/validation.js.Без названия"></script>
