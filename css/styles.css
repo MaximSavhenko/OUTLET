@@ -270,6 +270,7 @@ li.top-search {
     -webkit-transform: rotate(-90deg) scale(0);
     transform: rotate(-90deg) scale(0);
 }
+
 .navbar-search-toggle:before, 
 .navbar-search-toggle:after {
     position: absolute;
