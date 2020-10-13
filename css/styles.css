@@ -220,12 +220,6 @@ img.label-overlay, .Grid-cell img.label-overlay {
     align-items: center;
 }
 
-/* .header-main-container .header-right { */
-    /* position: absolute; */
-    /* top: 0;
-    right: -100px; */
-/* } */
-
 .mobile-cart {
     display: flex;
     align-items: center;
@@ -249,20 +243,63 @@ li.top-search {
 
 .mini_search_block {
     position: absolute;
-    top: 28px;
-    right: 160px;
-    width: 30%;
+    top: 26px;
+    right: 180px;
+    width: 67%;
     z-index: -1;
-   
 }
 
 .mini_search_block.active {
     z-index: 20;
 }
 
+.navbar-search-toggle {
+   display: inline-block;
+   cursor: pointer;
+   position: relative;
+   height: 32px;
+}
+
+.navbar-search-toggle:before {
+    content: url('../img/suche-white.svg');
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    display: inline-block;
+    
+}
+
+.navbar-search-toggle:after {
+    content: url('../img/close-button.svg');
+    -webkit-transform: rotate(-90deg) scale(0);
+    transform: rotate(-90deg) scale(0);
+}
+.navbar-search-toggle:before, 
+.navbar-search-toggle:after {
+    position: absolute;
+    transition: .3s all ease;
+    top: 3px;
+    left: -27px;
+    width: 29px;
+}
+ 
+.navbar-search-toggle:after {
+    top: 15px;
+    left: -24px;
+}
+
+.navbar-search-toggle.active:before {
+    -webkit-transform: rotate(-90deg) scale(0);
+    transform: rotate(-90deg) scale(0);
+}
+
+.navbar-search-toggle.active:after {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+}
+
 .search-input {
-    height: 2rem;
-    font-size: 12px;
+    height: 3rem;
+    font-size: 15px;
     box-sizing: border-box;
     border: none;
     border-radius: 2px 0 0 2px;
@@ -276,7 +313,7 @@ li.top-search {
 .search-btn {
     background-color: #38403e;
     border-radius: 0 4px 4px 0;
-    height: 2rem;
+    height: 3rem;
     width: 2rem;
     box-sizing: border-box;
     padding: 0.3rem;
