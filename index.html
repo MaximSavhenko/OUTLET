@@ -118,14 +118,7 @@
                     <div class="header">
                         <div class="header-left header-menu hidden-sm">
                         </div>
-                        <button type="button" title="Los" class="search-btn-top" onclick="showSerach();">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="search"
-                                style=" fill: black;">
-                                <path class="search_icon"
-                                    d="M91.41 88.59L70.8 68a36.1 36.1 0 1 0-2.8 2.8l20.59 20.61a2 2 0 0 0 2.83-2.83zM12 44a32 32 0 1 1 32 32 32 32 0 0 1-32-32z"
-                                    id="search"></path>
-                            </svg>
-                        </button>
+                        
                         <div class="header-center header-logo">
                             <a href="https://www.dirndl-outlet.net/" title="Trachten Online Shop: LIMBERRY"
                                 class="logo">
@@ -135,11 +128,9 @@
                             </a>
                         </div>
                         <div class="header-right">
-                            <div class="mobile-cart">
+                            <div class="mobile-cart hidden-sm">
                                 <div>
-                                    <!-- <img src="./img/suche-white.svg" alt="search" height="31" width="29" class="btn__search-icon"/> -->
-
-                                    <div class="navbar-search-toggle"><span></span></div>
+                                    <button class="navbar-search-toggle" type="button" ><span></span></button>
                                     <a href="https://www.dirndl-outlet.net/customer/account/" title="Konto"><img
                                             src="./img/kundenkonto-white.svg" height="35"
                                             width="29"></a>
@@ -150,7 +141,7 @@
                             </div>
                             <div class="header-menu mobile"></div>
                         </div>
-                        <div class="mini_search_block">
+                        <!-- <div class="mini_search_block">
                             <form id="search_mini_form_mobile" action="https://www.dirndl-outlet.net/catalogsearch/result/" method="get">
                                 <div class="mini_search_wrap">
                                     <input id="search_mobile" type="text" name="q" value="" class="search-input">
@@ -163,7 +154,7 @@
                                     </button>
                                 </div>
                             </form>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="nav-container-outer">
@@ -245,18 +236,23 @@
                 </div>
                 <div class="mobile-nav-container">
                     <div id="mobile-menu-button">Menü</div>
-                    <form id="search_mini_form_mobile" action="https://www.dirndl-outlet.net/catalogsearch/result/" method="get">
-                        <div class="">
-                            <input id="search_mobile" type="text" name="q" value="" class="search-input">
-                            <button type="submit" title="Los" class="search-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="search" style="fill: white;">
-                                    <path class="search_icon"
-                                        d="M91.41 88.59L70.8 68a36.1 36.1 0 1 0-2.8 2.8l20.59 20.61a2 2 0 0 0 2.83-2.83zM12 44a32 32 0 1 1 32 32 32 32 0 0 1-32-32z"
-                                        id="search"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
+                    <button  class="navbar-search-toggle" type="button" onclick="showSerach();">
+                        <!-- <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 637.52">
+                            <defs>
+                                <style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px;}</style>
+                            </defs>
+                            <circle class="cls-1" cx="193.07" cy="366.66" r="115.03"/><line class="cls-1" x1="274.4" y1="447.99" x2="397.26" y2="570.85"/>
+                        </svg> -->
+
+                        <img src="./img/suche-white.svg" alt="searchIcon" />
+                    </button>
+                    <a href="https://www.dirndl-outlet.net/customer/account/" title="Konto">
+                        <img src="./img/kundenkonto-white.svg" height="35" width="29">
+                    </a>
+                    <a href="https://www.dirndl-outlet.net/checkout/cart/" title="Warenkorb">
+                        <img src="./img/warenkorb-white.svg" height="35" width="29">
+                    </a>
+                    
                     <ul id="mobile-menu">
                         <li class="level0 nav-1 level-top first">
                             <a href="https://www.dirndl-outlet.net/dirndl-sale.html" class="level-top">
@@ -327,6 +323,34 @@
                         </li>
                     </ul>
                 </div>
+                <div class="mini_search_block">
+                    <form id="search_mini_form_mobile" action="https://www.dirndl-outlet.net/catalogsearch/result/" method="get">
+                        <div class="mini_search_wrap">
+                            <input id="search_mobile" type="text" name="q" value="" class="search-input">
+                            <button type="submit" title="Los" class="search-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="search" style="fill: white;">
+                                    <path class="search_icon"
+                                        d="M91.41 88.59L70.8 68a36.1 36.1 0 1 0-2.8 2.8l20.59 20.61a2 2 0 0 0 2.83-2.83zM12 44a32 32 0 1 1 32 32 32 32 0 0 1-32-32z"
+                                        id="search"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="mini_search_block_mobile">
+                    <form id="search_mini_form_mobile" action="https://www.dirndl-outlet.net/catalogsearch/result/" method="get">
+                        <div class="mini_search_wrap">
+                            <input id="search_mobile" type="text" name="q" value="" class="search-input">
+                            <button type="submit" title="Los" class="search-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="search" style="fill: white;">
+                                    <path class="search_icon"
+                                        d="M91.41 88.59L70.8 68a36.1 36.1 0 1 0-2.8 2.8l20.59 20.61a2 2 0 0 0 2.83-2.83zM12 44a32 32 0 1 1 32 32 32 32 0 0 1-32-32z"
+                                        id="search"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="main-container col1-layout">
                 <div class="main">
@@ -396,7 +420,7 @@
                             -->
 
                             .page {
-                                max-width: 1400px;
+                                max-width: 1800px;
                             }
                         </style>
                         <div class="row">
@@ -734,16 +758,16 @@
     <script>
 
         function showSerach() {
-            var _search_mini_form_mobile = document.getElementById("search_mini_form_mobile");
-            console.log(_search_mini_form_mobile.style.display);
-            if (_search_mini_form_mobile.style.display === "none" || _search_mini_form_mobile.style.display === "") {
-                _search_mini_form_mobile.style.display = "block";
+            var _search_mini_form_mobile = document.getElementsByClassName("mini_search_block_mobile");
+            console.log(_search_mini_form_mobile[0].style.display);
+            if (_search_mini_form_mobile[0].style.display === "none" || _search_mini_form_mobile[0].style.display === "") {
+                _search_mini_form_mobile[0].style.display = "block";
                 console.log("set block");
             } else {
                 console.log("set block");
-                _search_mini_form_mobile.style.display = "none";
-            }
-        }
+                _search_mini_form_mobile[0].style.display = "none";
+            };
+        };
     </script>
     <script type="text/javascript">
         var amscroll_object = new amscroll();

@@ -21,6 +21,14 @@ li {
     background: #000000;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
 .page, .footer-container {
     max-width: 1400px;
     margin: auto;
@@ -243,26 +251,32 @@ li.top-search {
     top: 26px;
     right: 166px;
     width: 68%;
-    z-index: -1;
+    display: none;
+    /* z-index: -1; */
 }
 
 .mini_search_block.active {
-    z-index: 20;
+    display: block;
+}
+
+.mini_search_block_mobile {
+    opacity: 0;
 }
 
 .navbar-search-toggle {
    display: inline-block;
    cursor: pointer;
-   position: relative;
    height: 32px;
+}
+
+button.navbar-search-toggle:focus {
+    outline: none;
 }
 
 .navbar-search-toggle:before {
     content: url('../img/suche-white.svg');
     -webkit-transform: rotate(0deg) scale(1);
     transform: rotate(0deg) scale(1);
-    display: inline-block;
-    
 }
 
 .navbar-search-toggle:after {
@@ -1420,19 +1434,29 @@ h2 {
     }
 
     button.search-btn-top {
-        width: 25px;
-        height: 25px;
-        min-width: 25px;
-        min-height: 25px;
-        position: absolute;
-        left: 58px;
+        width: 29px;
+        height: 30px;
+        min-width: 29px;
+        min-height: 30px;
         padding: 0px !important;
+    }
+
+    button.search-btn-top:focus {
+        outline: none;
     }
 
 
     #search_mini_form_mobile .search-input {
         background-color: #ffffff;
         width: 75vw;
+    }
+
+    .search-input {
+        border-radius: 0;
+    }
+    
+    .search-btn {
+        border-radius: 0;
     }
 
     button.search-btn {
@@ -1444,13 +1468,13 @@ h2 {
     }
 
     #search_mini_form_mobile .search-input {
-        width: 83vw !important;
-        height: 2.7rem !important;
+        width: 100vw !important;
+        height: 3rem !important;
     }
 
-    form#search_mini_form_mobile {
-        display: none;
-    }
+    /* form#search_mini_form_mobile {
+        display: flex;
+    } */
 
     .mobile-nav-container {
         padding: 0px !important;
@@ -1529,11 +1553,13 @@ h2 {
 
     button.search-btn-top {
         display: block;
-        width: 20px;
-        height: 20px;
-        min-width: 20px;
-        min-height: 20px;
+        width: 29px;
+        height: 29px;
+        min-width: 29px;
+        min-height: 29px;
     }
+
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {

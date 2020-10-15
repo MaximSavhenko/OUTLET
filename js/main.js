@@ -1,8 +1,5 @@
-// $(document).ready(function () {
-//     $(".btn__search-icon").click(function () {
-//         $('.mini_search_block').toggleClass("active"); 
-//     });
-// });
+
+
 
 
 
@@ -20,3 +17,17 @@ function toggleSearc() {
 
 toggleSearc();
 
+
+
+$(document).ready(function () {
+    function screen_check(){
+        if ($(window).width() >= 768) { 
+           $('.mini_search_block').css('');
+        };
+    };
+
+    screen_check();
+    $(window).on('resize', function(){
+        screen_check();
+    });
+});
