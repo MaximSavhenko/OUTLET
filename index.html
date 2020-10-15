@@ -337,10 +337,10 @@
                         </div>
                     </form>
                 </div>
-                <div class="mini_search_block_mobile">
+                <div id="mini_search_block_mobile">
                     <form id="search_mini_form_mobile" action="https://www.dirndl-outlet.net/catalogsearch/result/" method="get">
                         <div class="mini_search_wrap">
-                            <input id="search_mobile" type="text" name="q" value="" class="search-input">
+                            <input id="search_mobile" type="text" name="q" value="" class="search-input" placeholder="Suchen...">
                             <button type="submit" title="Los" class="search-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="search" style="fill: white;">
                                     <path class="search_icon"
@@ -745,6 +745,7 @@
 //]]>
 </script>
 <![endif]-->
+    
     <script type="text/javascript">
         //<![CDATA[
         var searchForm = new Varien.searchForm('search_mini_form_mobile', 'search_mobile', 'Suchen...');
@@ -758,14 +759,14 @@
     <script>
 
         function showSerach() {
-            var _search_mini_form_mobile = document.getElementsByClassName("mini_search_block_mobile");
-            console.log(_search_mini_form_mobile[0].style.display);
-            if (_search_mini_form_mobile[0].style.display === "none" || _search_mini_form_mobile[0].style.display === "") {
-                _search_mini_form_mobile[0].style.display = "block";
+            var _search_mini_form_mobile = document.getElementById("mini_search_block_mobile");
+            console.log(_search_mini_form_mobile.style.display);
+            if (_search_mini_form_mobile.style.display === "none" || _search_mini_form_mobile.style.display === "") {
+                _search_mini_form_mobile.style.display = "block";
                 console.log("set block");
             } else {
                 console.log("set block");
-                _search_mini_form_mobile[0].style.display = "none";
+                _search_mini_form_mobile.style.display = "none";
             };
         };
     </script>

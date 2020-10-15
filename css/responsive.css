@@ -235,7 +235,7 @@ img {
         opacity: 0;
     }
 
-    .mini_search_block_mobile {
+    #mini_search_block_mobile {
         width: 100%;
         position: static;
         display: none;

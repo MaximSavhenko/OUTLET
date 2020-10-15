@@ -259,7 +259,7 @@ li.top-search {
     display: block;
 }
 
-.mini_search_block_mobile {
+#mini_search_block_mobile {
     opacity: 0;
 }
 
