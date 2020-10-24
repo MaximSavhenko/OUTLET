@@ -252,7 +252,6 @@ li.top-search {
     right: 166px;
     width: 68%;
     display: none;
-    /* z-index: -1; */
 }
 
 .mini_search_block.active {
